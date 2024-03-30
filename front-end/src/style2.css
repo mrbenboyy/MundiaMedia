@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.card {
+  /* max-width: 350px; */
+  max-height: 450px;
+  background-color: #ffff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 14px 0px #187690;
+}
+
+svg {
+  height: 33px;
+  padding: 5px;
+  cursor: pointer;
+  color: #5c5b5b;
+}
+
+.info-svg {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+}
+
+/* Top Card styling */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.body-icons{
+  display: flex;
+}
+
+.info img {
+  width: 35px;
+  padding: 2px;
+  background-color: #ffff;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 0px rgba(216, 216, 216, 216.45);
+}
+
+.info {
+  display: flex;
+}
+
+.user-name {
+  /* margin: 0px 10px; */
+}
+
+.user-name .name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: auto;
+}
+.user-name p {
+  font-size: 10px;
+}
+
+.user-name .id {
+  color: grey;
+}
+
+/* body Styling */
+
+.body,
+.bottom-section {
+  padding: 5px 15px;
+}
+.body img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.body-icons {
+  padding: 5px 0px;
+}
+
+#back-button{
+  position: absolute;
+  width: 150px;
+  border: none;
+  background-color: #187690;
+}
+
+
+
+.friends-profile{
+  display: flex;
+}
+
+.friends-profile button{
+  width: 150px;
+}
+
+.friends-profile input{
+  margin: auto;
+}
+
+/* Bottom Styling */
+
+.bottom {
+  margin: auto;
+  display: flex;
+  padding-bottom: 7px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  padding-right: 40px;
+  border-radius: 10px;
+  border: 2px solid #a39e9e;
+  font-size: 15px;
+}
+
+.bottom svg {
+  transform: rotate(90deg);
+  right: 7px;
+}
+
+.bottom svg:hover {
+  color: #313030;
+}
+
+.bottom-section h4,
+p {
+  padding: 0 7px;
+}
+h6,
+span {
+  padding: 4px 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+span {
+  color: #8441f0;
+}
+
+.sub-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search{
+  max-width: 350px;
+  width: 100%;
+  margin: auto;
+}
+
+#voir-button{
+  width: 95%;
+  margin-top: 10px;
+}
+
+#friend-image-card{
+  width: 50px;
+  height: 50px;
+}
+
+#searched-card{
+  max-width: 350px;
+  margin: auto;
+  margin-top: 2%;
+}
+
+#friend-list-card {
+  flex: 1 0 calc(25% - 10px); /* Set flex-grow to allow equal space, 25% width for each card */
+  max-width: 350px;
+  min-width: 350px;
+  margin-right: 10px; /* Add margin-right to create space between cards */
+  margin-bottom: 10px; /* Add margin-bottom to create space between rows */
+}
+
+#friend-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  justify-content: start;
+}
+
+#username-searched-card{
+  display: flex;
+  align-items: center;
+}
+
+.row-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  width: 85%;
+  height: 2.5rem;            /* Footer height */
+}
+
+
+#connexion-button {
+  width: 25%;
+}
+
+#inscription-button{
+  width: 50%;
+}
+
+.friends-section {
+  flex: 1;
+  margin-right: 10px; /* Add margin if needed */
+  display: flex;
+  flex-direction: column; /* Set to column to have items stack vertically */
+}
+
+.form-control{
+  width: 50%;
+}
+
+.posts-section {
+  flex: 2;
+}
+
+#comments-card{
+  margin-bottom: 10px;
+}
+
+#comment{
+  color: black;
+  font-weight: 400;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#comment-username{
+  font-weight: bolder;
+}
+
+#comment-username-container{
+  margin: auto;
+}
+
+#params-buttons{
+  margin: auto;
+  width: 100%;
+  border: none;
+  color: black;
+}
+
+#params-buttons:hover{
+  color: white;
+}
+
+.update-input{
+  width: 25%;
+  margin: auto;
+}
+
+#update-buttons{
+  border: none;
+}

@@ -1,0 +1,181 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  position: relative;
+  min-height: 100vh;
+}
+.containerpost{
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  max-height: 5000px;
+  margin: auto;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  transition: height 0.2s ease;
+  box-shadow: 0 12px 28px #187690;
+}
+.containerpost .wrapper{
+  max-width: 500px;
+  display: flex;
+}
+
+.img-preview{
+  max-width: 350px;
+}
+.imgepost{
+  display:none;
+  visibility: none;
+}
+.containerpost .wrapper section{
+  width: 700px;
+  background: #fff;
+}
+.containerpost img{
+  cursor: pointer;
+}
+.containerpost .post{
+  transition: margin-left 0.18s ease;
+}
+.containerpost.active .post{
+  margin-left: -500px;
+}
+.post .formpost{
+  margin: 20px 80px;
+}
+.post .formpost .content,
+.audience .list li .column{
+  display: flex;
+  align-items: center;
+}
+.post .formpost .content img{
+  cursor: default;
+  max-width: 52px;
+}
+.card-img{
+  cursor: default;
+  max-width: 5200px;
+}
+.post .formpost .content .details{
+  margin: -3px 0 0 12px;
+}
+.formpost .content .details p{
+  font-size: 17px;
+  font-weight: 500;
+}
+.formpost :where(textarea, button){
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.formpost textarea{
+  resize: none;
+  overflow: hidden;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.formpost textarea::placeholder{
+  color: #858585;
+}
+.formpost textarea:focus::placeholder{
+  color: #b3b3b3;
+}
+.formpost :where(.theme-emoji, .options){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.formpost .options{
+  max-height: 5700px;
+  margin: 15px 0;
+  padding: 0 15px;
+  border-radius: 7px;
+  border: 1px solid #B9B9B9;
+  box-shadow: 0 1px 2px #187690;
+}
+.formpost .options :where(.list, li),
+.audience :where(.arrow-back, .icon, li .radio){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.formpost .options p{
+  color: #595959;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.formpost .options .list{
+  list-style: none;
+}
+.options .list li{
+  height: 42px;
+  width: 42px;
+  margin: 0 -1px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.options .list li:hover{
+  background: #f0f1f4;
+}
+.options .list li img{
+  width: 23px;
+}
+.formpost button{
+  height: 53px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #BCC0C4;
+  cursor: no-drop;
+  border-radius: 7px;
+  background: #e2e5e9;
+  transition: all 0.3s ease;
+}
+.formpost textarea:valid ~ button{
+  color: #fff;
+  cursor: pointer;
+  background: #4599FF;
+}
+.formpost textarea:valid ~ button:hover{
+  background: #1a81ff;
+}
+
+
+#card-posts{
+  max-width: 500px;
+  max-height: 2000px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 5%;
+}
+
+#text-post{
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#image-post{
+  width: 60px;
+  height: 60px;
+}
+
+#navbar-bg{
+  background-color: #187690;
+}
+
+#logo-navbar{
+  font-size: 50px;
+  font-style: italic;
+}
+
